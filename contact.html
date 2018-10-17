@@ -1,98 +1,150 @@
-<!doctype html>
-<html lang="es">
-	<head>
-        <link rel="stylesheet" href="assets/css/styles.css" type="text/css"/>
-		<meta charset="utf-8" /> 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- bootstrap cdn link -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+    <title>Contact</title>
+
+
+    <style>
+        h1 {
+            font-family: "Times New Roman", Times, serif;
+        }
+    </style>
+
+</head>
+
+
+
+<img src="./assets/images/title2.png" alt="Responsive image" style=" width: 100%;">
+
+<body background="./assets/images/cork-wallet.png" alt="backgroundimage">
+      <div>
         
-	<title> Basic-Contact</title>
+   
+    <!-- contaniner -->
+    <div class="container">
 
-
-		<div>
-				<img src="assets/images/title2.png" alt= "title" width="960px">
-
-		
-		</div>
-			
-			<title> Contact</title>
-
-    </head>
-    				
-						</nav2>
-        <body background= "assets/images/cork-wallet.png" alt= "background" >
-            
-            
+        <div class="row">
+            <div class="col-md-12 p-6" style="background-color: white ;">
 
 
 
-			<section>
-				<header>
-					<h1>Contact
-						<p>Professional</p>
-						<nav2>
-							<ul>
-								<li><a href="index.html">About</a></li>
-								<li><a href="portfolio.html">Portfolio</a></li>
-								<li><a href="contact.html">Contact</a></li>
-								
-							</ul>	
-						</nav2>
+                <!-- contact form -->
 
-					</h1>			
-			 	</header>
-			</section>	
-				
-			<section>
-					<article>
+                <div class="col-12">
+                    <div class="container px-4 py-4 mt-4 mb-4" style="border: darkgrey; border-style: solid; border-width: 2px; border-radius: 15px; width: 90%; margin-bottom: 10px;">
 
-						<div>
-								<h2>Contact</h2>
+                        <div class="form-group">
+                            <form class="px-4 py-3">
 
-						</div>
-                        <div class="container">
-                            <form action="action_page.php">
-                          
-                              <label for="fname">First Name</label>
-                              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                          
-                              <label for="lname">Last Name</label>
-                              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                          
-                              <label for="country">Country</label>
-                              <select id="country" name="country">
-                                <option value="Mexico">Mexico</option>
-                                <option value="Mexlight">Mexico Light</option>
-                                <option value="Dmex">Diet Mexico</option>
-                              </select>
-                          
-                              <label for="subject">Subject</label>
-                              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                          
-                              <input type="submit" value="Submit">
-                          
+
+                                <!-- Form header -->
+                                <h1 class="display-2 text-left padding-bottom-2 " style="color:#4aaaa5">Contact</h1>
+                                <!-- dividing line -->
+                                <hr class="my-4" style="height: 2px ;">
+
+                                <!-- First Name input -->
+                                <div class="form-group">
+                                    <label for="fname">First Name</label>
+                                    <input type="######" class="form-control" id="exampleFormControlInput1" placeholder="Your name..">
+                                </div>
+
+                                <!-- Last Name input -->
+                                <div class="form-group">
+                                    <label for="lname">Last Name</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your last name..">
+                                </div>
+
+                                <!-- dropdown menu -->
+                                <div>
+                                    <label for="country">Country</label>
+                                    <select id="country" name="country" class="form-control">
+                                        <option value="Select a Country..">Select a Country..</option>
+                                        <option value="Mexico">Mexico</option>
+                                        <option value="Mexlight">Mexico Light</option>
+                                        <option value="Dmex">Diet Mexico</option>
+                                    </select>
+                                </div>
+
+                                <!-- Email input -->
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Email address</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                </div>
+
+                                <!-- Email Subject -->
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Subject</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Write something.."
+                                        rows="3"></textarea>
+
+                                    <!-- Submit button -->
+                                    <input type="submit" class="mt-4 mb-2" value="Submit">
+                                </div>
                             </form>
-                          </div>
+                        </div>
+                    </div>
+                    <!-- container3 form closing div -->
+                </div>
 
-                        
+            </div>
 
-					 		
-					</article>	
-			</section>
+        </div>
 
-			
+    </div>
 
-			
-			<div id="footer">
-Copyright &copy; 2018-Elias Juarez Verdugo
-</div>
+    <!--links footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+    <!-- bakgroud closing div -->
+    <br>
+
+    <div class="col-md-12 offset-md-12" style="height: 5px; background-color: #4aaaa5;padding: 5 px;">
+        <div class="row">
+
+            <div style="background-color: #4aaaa5; padding: 5 px;">
+
+
+            </div>
+
+        </div>
+    </div>
+
+        <!-- Copyright footer -->
+    <div class="row">
+
+        <div class="col-lg-12 offset-lg-0 p-6">
+            <p class="text-center" style="background-color: #454746;color: white;padding-bottom: 20px;padding-top: 20px;"
+                >Copyright &copy; 2018-Elias Juarez Verdugo</p>
+
+        </div>
+
+    </div>
+
+    </div>
+    <!-- container1 closing div -->
 
 </body>
 
-				<footer>
-		           <small>
-                Copyright &copy; 2018-Elias Juarez Verdugo<br/>
-				eliasib.juarez@gmail.com </br>
-                Pagina Actualizada el: 20 de Abril 2015           
-            </small>        
-        </footer>
-       </body>
 </html>
